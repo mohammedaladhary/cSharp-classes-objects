@@ -16,6 +16,12 @@
 
     }
 
+    class BankAccount
+    {
+        public int AccountNumber = 11211212;
+        public string OwnerName = "Mohammed Abdullah";
+        public double Balance;
+    }
     private static void Main(string[] args)
     {
         Book myObj = new Book();
@@ -31,7 +37,13 @@
             + " when the diameter is " + circle.diameter);
         Console.WriteLine(" -----------------------------------");
 
-        
+        BankAccount bankAccount = new BankAccount();
+        Console.WriteLine("AccountNumber: " +bankAccount.AccountNumber);
+        Console.WriteLine("OwnerName: " + bankAccount.OwnerName);
+        Console.WriteLine((bankAccount.Balance = 50.554)+" RO");
+        Console.WriteLine(" -----------------------------------");
+
+
 
     }
 } 
